@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>News</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+<body>
+
+    <header class="navbar navbar-dark bg-primary ">
+      <span class="navbar-brand mb-0 h1">Navbar</span>
+    </header>
+    <div id="connectionStatus" class="hidden" role="alert"></div>
+    <!-- <header>
+        <h1>Whaddup</h1>
+        <select id="sourceSelector"></select>
+    </header> -->
+    <form class="bd-search d-flex align-items-center">
+    <div class="col-md-6 form-group  ">
+        <label for="pnotes">Project</label>
+        <select  id="pnotes" class="form-control"></select>
+    </div>
+    <div class="col-md-6 form-group  ">
+        <label for="sprint">Sprint</label>
+        <select class="form-control" id="sprint"></select>
+    </div>  
+    </form>
+    
+    
+    <main id="main" class="col-sm-12"></main>
+    
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+    <div class="modal fade" id="noteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="noteTitle">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <select class="form-control" id="noteStatus"></select>
+                <div class="modal-body" id="noteDesc">
+                  
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary" id="noteUpdate">Save changes</button>
+                </div>
+              </div>
+            </div>
+    </div>
+
+</body>
+</html>

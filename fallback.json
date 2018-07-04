@@ -1,0 +1,13 @@
+{
+    "articles":[
+        {
+            "title":"Unable to Fetch News Offine",
+            "url":"",
+            "urlToImage":"images/icons/icon-152x152.png",
+            "description":"Try loading the page again when you're online"
+
+
+
+        }
+    ]
+}
